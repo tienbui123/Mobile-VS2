@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="School.Droid/School.Droid.csproj">
+﻿<Properties StartupItem="School.iOS/School.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.AVD_for_Galaxy_Nexus_by_Google" />
   <MonoDevelop.Ide.Workbench ActiveDocument="School.Droid/Helper/Remider.cs">
     <Files>

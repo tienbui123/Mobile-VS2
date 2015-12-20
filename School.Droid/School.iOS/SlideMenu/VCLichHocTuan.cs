@@ -184,6 +184,7 @@ namespace School.iOS
 				timeLHTuan.Hidden=false;
 				txtngayLHTuan.Hidden=false;
 				isfirst = false;
+				LoadedDate=dateOfWeek;
 				}
 				if (listCT.Count==0) 
 				{
@@ -196,7 +197,7 @@ namespace School.iOS
 				timeLHTuan.Text = "Học Kỳ " + listLH [0].HocKy + " Năm học " + listLH [0].NamHoc;
 				if (listCT.Count > 0) {
 					
-					LoadedDate=dateOfWeek;
+
 
 					listContent.Source = new LichHocTSource (listCT, this);
 					listContent.ReloadData ();

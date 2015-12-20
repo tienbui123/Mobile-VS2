@@ -291,7 +291,8 @@ namespace School.iOS
 				UIAlertView _error = new UIAlertView ("Lỗi", "Không tìm thấy Nhắc lịch đã tạo", null, "Ok", null);
 				if (VCLichHoc.instance != null)
 					VCLichHoc.Instance.LoadData ();
-				if (VCLichHocTuan.instance != null)
+				if (VCLichHocTuan.instance != null&&VCLichHocTuan.LoadedDate.Year>1)
+					
 					VCLichHocTuan.Instance.LoadData_Tuan (VCLichHocTuan.LoadedDate);
 				if (VCLichThi.instance != null)
 					VCLichThi.Instance.LoadData ();
@@ -401,7 +402,7 @@ namespace School.iOS
 					BRemind.RemoveRemind (SQLite_iOS.GetConnection (), controller.Event.EventIdentifier);
 					if (VCLichHoc.instance != null)
 						VCLichHoc.Instance.LoadData ();
-					if (VCLichHocTuan.instance != null)
+					if (VCLichHocTuan.instance != null&&VCLichHocTuan.LoadedDate.Year>1)
 						VCLichHocTuan.Instance.LoadData_Tuan (VCLichHocTuan.LoadedDate);
 					if (VCLichThi.instance != null)
 						VCLichThi.Instance.LoadData ();
@@ -423,7 +424,7 @@ namespace School.iOS
 						}
 						if (VCLichHoc.instance != null)
 							VCLichHoc.Instance.LoadData ();
-						if (VCLichHocTuan.instance != null)
+						if (VCLichHocTuan.instance != null&&VCLichHocTuan.LoadedDate.Year>1)
 							VCLichHocTuan.Instance.LoadData_Tuan (VCLichHocTuan.LoadedDate);
 						ItemLH = null;
 					} else {
